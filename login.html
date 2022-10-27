@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN Page</title>
+        <script> function Hello(){alert("Benvenuto " + document.getElementById("nome").children[0].value + "   " + document.getElementById("cognome").children[0].value) }</script>
+    </head>
+    <body>
+        <form method="POST" action="http://localhost:8080" onsubmit={Hello()}>
+            <label for="firstname">Nome</label><br>
+            <div id="nome"><input type="text" id="firstname" name="nome"/></div><br>
+            <label for="firstname">Cognome</label><br>
+            <div id="cognome"><input type="text" id="lastname"/></div>
+            <br>
+            <input type="submit" value="input"/> 
+        </form>
+        
+    </body>
+</html>
